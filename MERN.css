@@ -1,0 +1,71 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  color: #007acc;
+  margin-top: 20px;
+}
+
+/* Section Containers */
+.html, .css {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Day Blocks */
+.html div, .css div {
+  margin: 20px 0;
+  padding: 15px;
+  border-left: 4px solid #007acc;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+/* Links */
+a {
+  display: inline-block;
+  margin: 6px 0;
+  text-decoration: none;
+  color: #fff;
+  background: #007acc;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+a:hover {
+  background: #005f99;
+}
+
+/* Horizontal Rules */
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 15px 0;
+}
+
+/* Special Homework Styling */
+.html .hw, .css .hw {
+  background: #eaf6ff;
+  border-left: 4px solid #00c6ff;
+}
+
+.html .hw a, .css .hw a {
+  background: #00c6ff;
+}
+
+.html .hw a:hover, .css .hw a:hover {
+  background: #0099cc;
+}
