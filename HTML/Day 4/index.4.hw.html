@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+ </head>
+ <body>
+    
+    <h1>Job Application: Senior Web Developer</h1>
+    <p>Thank you for your interest in joining our team. Please fill out the application form below.</p>
+    <hr>
+
+    <form>
+
+        <h2>Personal Information</h2>
+
+        <label for="fname">Full Name:</label>
+        <br>
+         <input type="text" placeholder="e.g., Abhay Yadav" required>
+
+         <br><br>
+
+        <label for="email">Email :</label>
+        <br>
+         <input type="email" id="email" placeholder="e.g., abhay.yadav@example.com" required>
+        
+         <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <br>
+         <input type="tel" id="phone" name="userPhone" placeholder="e.g., +91 9876543210" required>
+
+          <br><br>
+
+        <label for="linkedin">LinkedIn Profile URL:</label>
+        <br>
+         <input type="url" id="linkedin" name="userLinkedIn" placeholder="e.g., https://www.linkedin.com/in/abhay-yadav">
+   
+          <br><br>
+
+         <hr>
+
+        <h2>Professional Information</h2>
+       
+        <label for="resume">Upload Your Resume (PDF or DOCX) :</label>
+        <br>
+         <input type="file" id="resume" name="userResume" accept=".pdf,.doc,.docx">
+       
+        <br><br>
+   
+        <label for="cover_letter">Cover Letter:</label>
+        <br>
+        <textarea id="cover_letter" name="userCoverLetter" rows="4" cols="50" placeholder="Tell us why you're a great fit for this role..."></textarea>
+        <br><br>
+   
+        <label for="experience">Years of Experience:</label>
+        <br>  
+        <input type="number" id="experience" name="userExperience" min="0" placeholder="e.g., 2">
+        
+        <br><br>
+
+        <label>Earliest Possible Start Date:</label>
+        <br>
+        <input type="date" id="start_date" name="userStartDate">
+        <br><br>
+
+        <hr>
+    
+        <h2>Skills & Availability</h2>
+
+        <label for="primary_skill">Primary Skillset (Choose One):</label>
+        <br>
+        <input type="radio" id="primary_skill" name="userPrimarySkill" value="frontend">
+        <label for="frontend">Frontend Development</label>
+        <br>
+        <input type="radio" id="backend" name="userPrimarySkill" value="backend">
+        <label for="backend">Backend Development</label>
+        <br>
+        <input type="radio" id="fullstack" name="userPrimarySkill" value="fullstack">
+        <label for="fullstack">Full Stack Development</label>
+        <br><br>
+
+        <label for="userskills">Additional Skills(Select all that apply):</label>
+        <br>
+        <input type="checkbox" id="react" name="userskills" value="React">React
+        <br>
+        <input type="checkbox" id="nodejs" name="userskills" value="Node.js">Node.js
+        <br>
+        <input type="checkbox" id="database" name="userskills" value="Database Management">Database Management
+        <br>
+        <input type="checkbox" id="cloud_devops" name="userskills" value="Cloud/DevOps">Cloud/DevOps
+
+        <br><br>
+
+        <label for="work_type">Preferred Work Type:</label>
+        <br>
+        <select id="work_type" name="userWorkType">
+         <option value="full_time">Full-Time</option>
+         <option value="half_time">Half-Time</option>
+         <option value="remote">Remote</option>
+         <option value="internship">Internship</option>
+        </select>
+    
+        <br><br>
+    
+        <hr>
+    
+        <h2>Final Confirmation</h2>
+        
+        <input type="checkbox" id="relocate" name="relocate" value="yes">
+        <label>I am legally authorized to work in this country.</label>
+        
+        <br><br>
+   
+        <label for="question">How did you hear about us?</label>
+        <br>
+        <input type="text" id="answer" name="userReferral" placeholder="e.g., LinkedIn, Friend, Job Board">
+       
+        <br><br>
+                        
+        <button type="submit">Submit Application</button>
+        <button type="reset">Clear Form</button>
+    
+    </form>
+    
+ </body>
+</html>
