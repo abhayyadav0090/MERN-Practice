@@ -1,0 +1,57 @@
+.container{
+    background-color: antiquewhite;
+    display: flex;
+    height: 600px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    gap: 10px;
+}
+
+/* 
+justify-content: main axis ke around kaam karta hai.
+align-items: cross axis ke around kaam karta hai.
+Agar flex-direction: row hai to main axis horizontal hoga. 
+Agar flex-direction: row hai to cross axis vertical hoga.
+Agar flex-direction: column hai to cross axis horizontal hoga.
+Agar flex-direction: column hai to main axis vertical hoga. */
+
+
+.box{
+    height: 100px;
+    width: 100px;
+    /* margin: 5px; */
+    padding: 5px;
+}
+
+.first{
+    background-color: orange;
+    /* flex-grow: 1; */
+    /* flex-basis: 150px; */
+
+}
+
+.second{
+    background-color: green;
+    /* flex-grow: 2; */
+    /* flex-shrink: 4;
+    flex-basis: 300px; */
+}
+
+/* flex properties
+flex basis used to set the initial size of a flex item along the main axis
+ */
+
+.third{
+    background-color: red;
+    /* flex-grow: 3; */
+    align-self: flex-start;
+}
+
+.fourth{
+    background-color: chartreuse;
+    /* flex-grow: 4; */
+    /* align-self: flex-start; */
+}

@@ -1,0 +1,43 @@
+h1{
+    background-color: orange;
+    height: 38px;
+    width:254px;
+    /* Hieght and width are applicable to content in the element here it is Hello coder Army */
+    
+/* 
+    border-width: 5px;
+    border-style: dashed;
+    border-color: blueviolet; */
+
+    border: 5px solid green;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 30px;
+    /* padding and margin can be applied differently on each side by specifying top, right, bottom, and left values. like (padding: 10px 20px 30px 40px;) OR (margin: 10px 20px 30px 40px;) */
+}
+
+h2{
+    text-align: center;
+    background-color: pink;
+    padding: 4px;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 32px;
+}
+
+p{
+    background-color: lightgreen;
+    padding: 10px;
+    border: 4px solid blue;
+    margin: 20px;
+    border-radius: 19px;
+}
+
+body{
+    background-color: lightblue;
+    height: 445px;
+    width: 80vw;
+    border: 5px solid;
+    border-radius: 21px;
+    margin-right: 8px;
+}
