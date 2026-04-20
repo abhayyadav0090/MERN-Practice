@@ -1,71 +1,86 @@
-/* General Reset */
-body {
+/* Global Reset & Variables
+   Stop relying on browser defaults. We set explicit variables for a modern dark theme. 
+*/
+:root {
+  --bg-color: #0f172a;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-color: #38bdf8;
+  --accent-hover: #0284c7;
+  --border-color: #1e293b;
+}
+
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout & Typography 
+   Constraining the width so your text doesn't stretch across massive monitors.
+*/
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
   line-height: 1.6;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Headings */
-h1, h2 {
+/* Headings Hierarchy
+   Giving visual weight to your structure. 
+*/
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
   text-align: center;
-  color: #007acc;
-  margin-top: 20px;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
 }
 
-/* Section Containers */
-.html, .css {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #e2e8f0;
 }
 
-/* Day Blocks */
-.html div, .css div {
-  margin: 20px 0;
-  padding: 15px;
-  border-left: 4px solid #007acc;
-  background: #fafafa;
-  border-radius: 6px;
-}
-
-/* Links */
+/* Interactive Links 
+   Turning your raw text links into touch-friendly, interactive elements.
+*/
 a {
   display: inline-block;
-  margin: 6px 0;
+  color: var(--text-primary);
   text-decoration: none;
-  color: #fff;
-  background: #007acc;
-  padding: 6px 12px;
-  border-radius: 4px;
-  transition: background 0.3s ease;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  margin: 0.3rem 0.2rem;
+  border-radius: 6px;
+  background-color: var(--border-color);
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.2s ease-in-out;
 }
 
 a:hover {
-  background: #005f99;
+  background-color: var(--accent-color);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25);
 }
 
-/* Horizontal Rules */
+/* Structural Elements
+*/
 hr {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin: 15px 0;
+  border: 0;
+  height: 1px;
+  background: var(--border-color);
+  margin: 2.5rem 0;
 }
 
-/* Special Homework Styling */
-.html .hw, .css .hw {
-  background: #eaf6ff;
-  border-left: 4px solid #00c6ff;
-}
-
-.html .hw a, .css .hw a {
-  background: #00c6ff;
-}
-
-.html .hw a:hover, .css .hw a:hover {
-  background: #0099cc;
+p {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
 }
