@@ -1,0 +1,25 @@
+#container{
+    background-color: rgb(177, 6, 6);
+    height: 400px;
+    width: 600px;
+    position: relative;
+}
+
+#box{
+    background-color: rgb(1, 1, 88);
+    height: 200px;
+    width: 600px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+
+#circle{
+    background-color: white;
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 200px;
+}

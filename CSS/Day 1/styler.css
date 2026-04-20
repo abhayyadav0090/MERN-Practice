@@ -1,0 +1,69 @@
+/* /* By using tag */
+h1{
+    background-color: pink;
+}
+ul{
+    background-color: aquamarine;
+}
+h2{
+    background-color: blue;
+} */
+
+/* id based selection */
+#first{
+    background-color: blue;
+}
+
+#second{
+    background-color: pink;
+}
+
+/* Class based Selection */
+.third{
+    background-color: green;
+}
+.fourth{
+    background-color: blueviolet;
+}
+
+/* Group based Selection */
+h1, .fourth, #first{
+    background-color: aqua;
+}
+
+h1{
+    background-color: rgb(255, 25, 25, 0.99);
+}
+
+h2{
+    background-color: hsl(110, 50%, 50%, 0.9);
+}
+
+/* colur Pallet Type */
+h1{
+    background-color: #4ee13e;
+}
+h2{
+   background-color: hsla(110, 500%, 50%, 1);
+   background-color: rgba(12, 255, 1, 0.99);
+}
+
+/* FONT */
+h1{
+    font-size: 32px;
+}
+li{
+    font-size: 1.09rem;
+}
+html{
+    font-size: 3vh 2vw;
+}
+li{
+    font-size: 3vh;
+}
+h2{
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}

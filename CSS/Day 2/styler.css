@@ -1,0 +1,65 @@
+/* span{
+    color: blue;
+} */
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+
+h1{
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 10px;
+    width:fit-content;
+    padding: 3px;
+}
+
+/* we can convert inline elements to block elements or block elements to inline elements.*/
+/* By using the "display" property. for example: (display: block;) or (display: inline;) */
+
+h2{
+    background-color: rgb(197, 132, 132);
+    border: 2px solid black;
+    border-radius: 10px;
+    width:fit-content;
+    padding: 2px;
+}
+
+span{
+    background-color: rgb(249, 220, 225);
+}
+
+label{
+    background-color: yellow;
+}
+
+th, td{
+    background-color: tomato;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 1px;
+}
+
+p{
+    background-color: lightgreen;
+    border: 2px solid black;
+    border-radius: 10px;
+    width:fit-content;
+    padding: 3px;
+}
+
+body{
+    background-color: rgb(164, 198, 164);
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 9px;
+    width:fit-content; 
+}
+
+/* 
+Box Sizing:
+    - content-box: This is the default value. The width and height properties include only the content. Padding and border are not included in the width and height.
+    - border-box: The width and height properties include the content, padding, and border. This means that if you set a width of 200px, the total width of the element will be 200px, including the content, padding, and border.
+*/
