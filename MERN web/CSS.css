@@ -19,13 +19,12 @@ body {
 
 /* Day Sections */
 .html.day1, .html.day2, .html.day3, .html.day4, .html.day5,
-.css.day1, .css.day2, .css.day3, .css.day4, .css.day5 {
+.css.day1, .css.day2, .css.day3, .css.day4, .css.day5, .revision {
   margin: 20px 0;
   padding: 15px;
-  background: #1a2235;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-  border-left: 4px solid #06b6d4;
+  background: #0d253a;
+  border-left: 4px solid #00c6ff;
 }
 
 /* Homework Sections */
