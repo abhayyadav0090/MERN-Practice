@@ -1,0 +1,76 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f1724; /* dark background */
+  color: #e6eef8;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Page Title */
+.html {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Day Sections */
+.html.day1, .html.day2, .html.day3, .html.day4, .html.day5, .html.revision {
+  margin: 20px 0;
+  padding: 15px;
+  background: #1a2235;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  border-left: 4px solid #06b6d4;
+}
+
+/* Homework Section */
+.html.day5.hw {
+  background: #0d253a;
+  border-left: 4px solid #00c6ff;
+}
+
+/* Links */
+a {
+  display: inline-block;
+  margin: 6px 8px;
+  text-decoration: none;
+  color: #fff;
+  background: #162033;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+a:hover {
+  background: #0891b2;
+}
+
+/* Homework Links */
+.html.day5.hw a {
+  background: #00c6ff;
+  color: #0b1220;
+}
+
+.html.day5.hw a:hover {
+  background: #0099cc;
+}
+
+/* Horizontal Rules */
+hr {
+  border: none;
+  border-top: 1px solid #374151;
+  margin: 15px 0;
+}
+
+/* Nested sections (like Day 2 List/Table, Day 3 Boiler/Root) */
+.html.day2.list, .html.day2.table, .html.day3.boiler, .html.day3.root {
+  margin-top: 12px;
+  padding: 12px;
+  background: #162033;
+  border-radius: 6px;
+  border-left: 3px solid #06b6d4;
+}
