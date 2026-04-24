@@ -1,25 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MERN Practice</title>
-  <link rel="stylesheet" href="https://abhayyadav0090.github.io/MERN-Practice/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MERN Practice — Abhay Yadav</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
 </head>
 <body>
-  <header class="hero">
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#">AY</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#topics">Topics</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="https://abhayyadav0090.github.io/portfolio/" target="_blank">Portfolio ↗</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="mobile-nav" id="mobileNav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#topics">Topics</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="https://abhayyadav0090.github.io/portfolio/" target="_blank">Portfolio ↗</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
     <div class="hero-content">
-      <h1>MERN Practice</h1>
-      <p>Explore all my practice projects and daily learnings in HTML, CSS, and MERN stack.</p>
-      <div class="hero-buttons">
-        <a href="MERN web/HTML.html" target="_blank" class="btn btn-primary">View HTML Content</a>
-        <a href="MERN web/CSS.html" target="_blank" class="btn btn-secondary">View CSS Content</a>
+      <span class="badge">📚 Learning in Public</span>
+      <h1 class="hero-title">
+        MERN<br/><span class="accent">Practice</span>
+      </h1>
+      <p class="hero-sub">
+        Daily learnings, exercises &amp; experiments in<br/>
+        <strong>HTML · CSS · JavaScript · Node.js · React · MongoDB</strong>
+      </p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="30">0</span><span class="stat-label">Exercises</span></div>
+        <div class="stat"><span class="stat-num" data-target="6">0</span><span class="stat-label">Topics</span></div>
+        <div class="stat"><span class="stat-num" data-target="100">0</span><span class="stat-label">% Passion</span></div>
+      </div>
+      <div class="hero-cta">
+        <a href="#topics" class="btn btn-primary">Explore Topics</a>
+        <a href="https://github.com/abhayyadav0090/MERN-Practice" target="_blank" class="btn btn-outline">GitHub ↗</a>
       </div>
     </div>
-  </header>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-tag">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">What is this?</h2>
+          <p>
+            This is my living, breathing MERN learning journal. Every day I learn something new
+            about the stack — and every day I commit it here. No polished products, just raw
+            learning documented honestly.
+          </p>
+          <p>
+            I believe in <strong>building in public</strong>. Mistakes are here. So is growth.
+            Follow along with <strong>#CoderArmy</strong> on LinkedIn.
+          </p>
+          <a href="https://www.linkedin.com/in/abhay-yadav-6923742b5/" target="_blank" class="btn btn-outline mt-1">LinkedIn ↗</a>
+        </div>
+        <div class="about-cards">
+          <div class="mini-card">
+            <span class="mini-icon">🌱</span>
+            <div>
+              <strong>Currently Learning</strong>
+              <p>MERN Stack — Express, MongoDB, React Hooks</p>
+            </div>
+          </div>
+          <div class="mini-card">
+            <span class="mini-icon">📢</span>
+            <div>
+              <strong>Building in Public</strong>
+              <p>Every milestone shared on LinkedIn with #CoderArmy</p>
+            </div>
+          </div>
+          <div class="mini-card">
+            <span class="mini-icon">🎯</span>
+            <div>
+              <strong>Goal</strong>
+              <p>Full-stack developer by end of B.Tech 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPICS -->
+  <section class="section section-dark" id="topics">
+    <div class="container">
+      <div class="section-tag">02 — Topics</div>
+      <h2 class="section-title">What I'm Practising</h2>
+      <div class="topics-grid" id="topicsGrid">
+
+        <div class="topic-card" data-topic="html">
+          <div class="topic-icon">🌐</div>
+          <h3>HTML</h3>
+          <p>Semantic markup, forms, tables, accessibility, and structuring real-world pages.</p>
+          <a href="https://abhayyadav0090.github.io/MERN-Practice/MERN%20web/HTML.html" target="_blank" class="topic-link">View Content →</a>
+          <div class="topic-tags"><span>Semantic</span><span>Forms</span><span>SEO</span></div>
+        </div>
+
+        <div class="topic-card" data-topic="css">
+          <div class="topic-icon">🎨</div>
+          <h3>CSS</h3>
+          <p>Flexbox, Grid, animations, transitions, responsive design and modern CSS tricks.</p>
+          <a href="https://abhayyadav0090.github.io/MERN-Practice/MERN%20web/CSS.html" target="_blank" class="topic-link">View Content →</a>
+          <div class="topic-tags"><span>Flexbox</span><span>Grid</span><span>Animations</span></div>
+        </div>
+
+        <div class="topic-card" data-topic="js">
+          <div class="topic-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, ES6+, async/await, fetch API, closures and event handling.</p>
+          <span class="topic-link inactive">Coming Soon</span>
+          <div class="topic-tags"><span>ES6+</span><span>DOM</span><span>Async</span></div>
+        </div>
+
+        <div class="topic-card" data-topic="react">
+          <div class="topic-icon">⚛️</div>
+          <h3>React</h3>
+          <p>Components, hooks (useState, useEffect), props, context, and routing with React Router.</p>
+          <span class="topic-link inactive">Coming Soon</span>
+          <div class="topic-tags"><span>Hooks</span><span>Components</span><span>Router</span></div>
+        </div>
+
+        <div class="topic-card" data-topic="node">
+          <div class="topic-icon">🟢</div>
+          <h3>Node.js &amp; Express</h3>
+          <p>REST APIs, middleware, routing, authentication with JWT, and server-side logic.</p>
+          <span class="topic-link inactive">Coming Soon</span>
+          <div class="topic-tags"><span>REST API</span><span>Middleware</span><span>JWT</span></div>
+        </div>
+
+        <div class="topic-card" data-topic="mongo">
+          <div class="topic-icon">🍃</div>
+          <h3>MongoDB</h3>
+          <p>CRUD operations, schema design with Mongoose, aggregation pipelines and indexing.</p>
+          <span class="topic-link inactive">Coming Soon</span>
+          <div class="topic-tags"><span>Mongoose</span><span>CRUD</span><span>Aggregation</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-tag">03 — Projects</div>
+      <h2 class="section-title">Practice Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-num">01</div>
+          <div class="project-badge">⭐ Active</div>
+          <h3>MERN Web Practice</h3>
+          <p>A growing collection of HTML &amp; CSS exercises, layouts, and experiments built during daily study sessions.</p>
+          <div class="project-stack"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="project-links">
+            <a href="https://abhayyadav0090.github.io/MERN-Practice/MERN%20web/HTML.html" target="_blank">View HTML →</a>
+            <a href="https://abhayyadav0090.github.io/MERN-Practice/MERN%20web/CSS.html" target="_blank">View CSS →</a>
+            <a href="https://github.com/abhayyadav0090/MERN-Practice" target="_blank">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-num">02</div>
+          <div class="project-badge upcoming">🔜 Upcoming</div>
+          <h3>React Components Library</h3>
+          <p>Reusable UI components built as part of learning React — buttons, cards, modals, and forms.</p>
+          <div class="project-stack"><span>React</span><span>CSS</span></div>
+          <div class="project-links"><span class="inactive-link">In Progress…</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-num">03</div>
+          <div class="project-badge upcoming">🔜 Upcoming</div>
+          <h3>REST API with Express</h3>
+          <p>A full CRUD REST API with authentication, built using Node.js, Express, and MongoDB.</p>
+          <div class="project-stack"><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+          <div class="project-links"><span class="inactive-link">In Progress…</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / FOOTER -->
   <footer class="footer">
-    <p>© 2026 Abhay Yadav · Built with ❤️ and MERN</p>
+    <div class="footer-inner">
+      <div class="footer-logo">AY</div>
+      <p class="footer-tagline">B.Tech IT · Full Stack Developer · Building in Public</p>
+      <div class="footer-links">
+        <a href="https://github.com/abhayyadav0090" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/abhay-yadav-6923742b5/" target="_blank">LinkedIn</a>
+        <a href="mailto:abhayyadav19955@gmail.com">Email</a>
+        <a href="https://abhayyadav0090.github.io/portfolio/" target="_blank">Portfolio</a>
+      </div>
+      <p class="footer-copy">© 2026 Abhay Yadav · Built with ❤️ and lots of ☕</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
