@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    perspective: 900px;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    cursor: pointer;
+    transition: all 2s;
+    /* transform: rotate(45deg); */
+}
+
+.box:hover{
+    background-color: red;
+    /* transform: scale(1.05); */
+    transform: translateZ(200px);
+    transform: rotateX(45deg) rotateY(45deg) rotateZ(15deg);
+}
