@@ -144,7 +144,7 @@
                 .reveal.visible { opacity: 1; transform: none; }
 
                 @media (max-width: 600px) {
-                .nav-links { display: none; }
+                .nav-links { display: flex; overflow-x: scroll; scrollbar-width: none; -ms-overflow-style: none;                }
                 .links-grid { grid-template-columns: 1fr 1fr; }
                 .day-subtitle { display: none; }
                 }
