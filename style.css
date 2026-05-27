@@ -439,7 +439,7 @@ a.topic-link:hover { color: var(--accent-2); }
   display: flex;
   gap: 0.5rem;
   overflow-x: scroll;
-  white-space: nowrap; }
+  white-space: nowrap;}
   /* .hero { padding: 6rem 1.5rem 3rem; }
   .hero-stats { gap: 1.5rem; }
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
