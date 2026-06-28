@@ -1,0 +1,143 @@
+[33m1fc750f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Daily MERN update
+[33m36617bf[m Initial MERN commit
+[33m9acde3b[m Update JS.html
+[33m9fc10c5[m Add files via upload
+[33mb6a9f51[m Add files via upload
+[33me3555bf[m Update JS.html
+[33m799c80d[m Add files via upload
+[33m1d91553[m Add files via upload
+[33md59dd4d[m Add files via upload
+[33m26a55bd[m Add files via upload
+[33m75172fa[m Update JS.html
+[33mc495bd8[m Fix HTML encoding issues in JS.html
+[33m7c62c99[m Update JS.html
+[33m7586bf9[m Add files via upload
+[33m0ac0395[m Add files via upload
+[33m2873255[m Update JS.html
+[33m8f9ecbe[m Add files via upload
+[33m3e21206[m Add files via upload
+[33m9c52f57[m Modify title and icon in JS.html
+[33m9d15db5[m Fix HTML formatting and add Portfolio 2 link
+[33m26df4b3[m Update print statement from 'Hello' to 'Goodbye'
+[33m6fe42db[m Update CSS.html
+[33m8ef3c65[m Restore CSS variables and styles in style.css
+[33m54acbfa[m Update index.html
+[33m3eb1371[m Update index.html
+[33mf797b83[m Fix HTML formatting and structure
+[33mcb1e8c9[m Update CSS.css
+[33mf87d42c[m Refactor CSS variables and styles for consistency
+[33m62cb518[m Update JS.css
+[33mcbab2ca[m Refactor navbar and hamburger menu functionality
+[33m820d0a0[m Refactor CSS variables and structure
+[33m108acc9[m Revise index.html with updated links and content
+[33m4af0a46[m Add files via upload
+[33mb73ee6c[m Delete MERN web directory
+[33m0c347df[m Remove unused CSS variables and styles
+[33m10614d4[m Update CSS variables and styles for improved design
+[33m7903bf4[m Update HTML.html
+[33m30a399a[m Update CSS.html
+[33m9e1dbe6[m Update HTML.html
+[33m0b487b2[m Change greeting from 'Hello' to 'Goodbye'
+[33m9daa9b1[m Add initial CSS styles for web application
+[33mecce542[m Update fmt.Println to print 'Goodbye World'
+[33mdf1f1bc[m Update HTML.html
+[33mba6a564[m Add files via upload
+[33mda94c8d[m Add files via upload
+[33mf86d01a[m Update CSS.html
+[33m5cc9a14[m Add files via upload
+[33m13fb2ef[m Update print statement from 'Hello' to 'Goodbye'
+[33me3d760c[m Update print statement from 'Hello' to 'Goodbye'
+[33m05d0abf[m Add files via upload
+[33mce2067e[m Delete CSS/Day 8/style6.css
+[33m155655c[m Delete CSS/Day 8/index6.html
+[33m61f5c41[m Change stylesheet link in index1.html
+[33mbf70e27[m Add files via upload
+[33m730beba[m Update CSS.html
+[33m47c2d75[m Add files via upload
+[33mafebfd2[m Add files via upload
+[33m49f5322[m Update CSS.html
+[33m25c0ac7[m Update print statement from 'Hello' to 'Goodbye'
+[33m7a99284[m Update CSS.html
+[33m1d5948f[m Create CSS.css
+[33me32443b[m Add files via upload
+[33ma00498f[m Add files via upload
+[33m4ef786a[m Add files via upload
+[33m975def9[m Update CSS.html
+[33m17298e4[m Update CSS.html
+[33macb52d0[m Fix HTML structure and add NexOS link
+[33m500b106[m Fix HTML formatting and add missing links
+[33m14cb3f7[m Delete MERN web/CSS.css
+[33m683e47b[m Revamp CSS.html with improved structure and styles
+[33m5205e9b[m Update print statement from 'Hello' to 'Goodbye'
+[33m039be14[m Fix HTML formatting and restore original content
+[33mb30f7b0[m Add script.js for navbar and animation features
+[33mcfeaee1[m Refactor CSS with variables and layout updates
+[33m13ac5f3[m Revamp index.html with new layout and content
+[33m087e980[m Fix HTML formatting and structure
+[33m51d0238[m Fix HTML formatting in index.html
+[33m58a0381[m Fix HTML structure and update header content
+[33m8c49a86[m Change stylesheet link in index.html2
+[33m3252d41[m Rename MERN.css to style.css
+[33m9c98bf5[m Update CSS.css
+[33macbce84[m Update HTML.html
+[33m17f3957[m Fix HTML formatting and structure
+[33m1d52d88[m Modify styles for day sections in CSS
+[33m8b33318[m Revise HTML content and formatting
+[33mf9521bd[m Change link color from white to black
+[33mee36435[m Delete HTML/Day 4/index.html
+[33m581073b[m Delete MERN web/HTML.css
+[33m6e8bbdd[m Fix HTML formatting and update links
+[33mb143143[m Update HTML.css
+[33m4904712[m Fix HTML formatting and structure
+[33m147e0ce[m Fix HTML formatting and structure
+[33m9bef446[m Update CSS styles for improved design and consistency
+[33mb8f2d7e[m Refactor CSS for improved styling and consistency
+[33m8ed9b4d[m Change stylesheet link in MERN.html
+[33m6bbbfde[m Refactor CSS for new layout and design
+[33m382c558[m Update MERN.html
+[33medec8a0[m Fix HTML structure in CSS.html
+[33me56ce25[m Fix HTML formatting and structure
+[33m1cd2693[m Update CSS.html links to correct stylesheet path
+[33m56aa489[m Add CSS styles for web application layout and design
+[33mef4de3f[m Fix HTML structure and content formatting
+[33m492cfc5[m Fix HTML formatting and structure
+[33mce7f2fc[m Update HTML file with new content structure
+[33mc9d671e[m Add initial HTML CSS styles for the web project
+[33me0adf02[m Delete README.md
+[33m4e5caed[m Rename project title in README to MERN.html
+[33m9fc2573[m Rename project title in README
+[33m01bc295[m Add project title to README
+[33m8732b63[m Fix HTML structure and content formatting
+[33me3c2d53[m Add files via upload
+[33ma6947a6[m Add files via upload
+[33m716853f[m Delete HTML/Day 3/Root directory
+[33m59bc3e9[m Update MERN.css
+[33mc84fd53[m Fix stylesheet link in index3.4.html
+[33m5c12480[m Fix HTML structure and update stylesheet link
+[33m9e74bfd[m Fix HTML formatting and structure
+[33m7fb5245[m Fix stylesheet link and maintain HTML structure
+[33m1d6ce80[m Update stylesheet link in index3.4.html
+[33m3647569[m Change stylesheet link to hosted URL
+[33m4b0e814[m Change stylesheet link to hosted URL
+[33m3cd4e1e[m Fix HTML structure and update stylesheet link
+[33m0c037b3[m Add files via upload
+[33m880f0f4[m Change stylesheet link to hosted CSS
+[33mda33ad4[m Change stylesheet link to external URL
+[33mf30b17a[m Change image sources and stylesheet link to HTTPS
+[33m4e6ff6e[m Add files via upload
+[33m06f9122[m Delete MERN.html
+[33m89cbd38[m Delete MERN web directory
+[33m05f83df[m Fix HTML structure and update stylesheet link
+[33m2a78674[m Update stylesheet link in MERN.html
+[33m40fa871[m Add files via upload
+[33m3a5852d[m Add stylesheet link to MERN.html
+[33m6864959[m Add stylesheet link to HTML document
+[33m7a36394[m Link stylesheet in CSS.html for styling
+[33mcecbf44[m Add files via upload
+[33m5eb485d[m Add files via upload
+[33m2f90477[m Delete MERN img/MERN img directory
+[33m96cf016[m Delete MERN img/CSS img directory
+[33me92bcac[m Add files via upload
+[33m03dd733[m Delete mern.html
+[33m4487110[m Add MERN practice projects section to mern.html
+[33md5659a9[m Add files via upload
