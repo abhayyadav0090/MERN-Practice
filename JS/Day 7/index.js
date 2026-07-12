@@ -50,3 +50,9 @@ let array = [10, 30, 50, 90, 11];
 for(let i=0; i<array.length; i++){
     console.log(array[i]);
 }
+
+// for of loop
+
+for(let num of array){
+    console.log(num);
+}
