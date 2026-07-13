@@ -47,12 +47,36 @@ console.log(arr);
 // shifting method is not recommended as it perform shifting for all element and it hampers performance of program
 
 let array = [10, 30, 50, 90, 11];
-for(let i=0; i<array.length; i++){
-    console.log(array[i]);
-}
 
-// for of loop
+// 'for' loop
+// for(let i=0; i<array.length; i++){
+//     console.log(array[i]);
+// }
 
-for(let num of array){
-    console.log(num);
-}
+// 'for of' loop
+// for(let num of array){
+//     console.log(num);
+// }
+
+// direct print
+console.log(array);
+
+let array2 = array; // copy by refernce
+// any change in array2 will be reflected in array
+array2.push(30);
+console.log(array2);
+
+// Primitive datatype-> Data copy
+// Non-Primitive datatype-> Reference copy
+
+let a = "Rohit";
+let b = a;
+b = "Mohit"; // it will not change a
+console.log(`a=`+a+` & `+`b=`+b);
+
+const arr2 =[10, 10, 12, 25];
+// arr2=[12, 13]; // can't modify constant datatype -> address change nhi hoga but you change elements of arr2
+console.log(arr2);
+arr2[2]=30;
+arr2.push(112);
+console.log(arr2);
