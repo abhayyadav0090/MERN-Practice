@@ -75,8 +75,14 @@ b = "Mohit"; // it will not change a
 console.log(`a=`+a+` & `+`b=`+b);
 
 const arr2 =[10, 10, 12, 25];
-// arr2=[12, 13]; // can't modify constant datatype -> address change nhi hoga but you change elements of arr2
-console.log(arr2);
-arr2[2]=30;
-arr2.push(112);
-console.log(arr2);
+// arr2=[12, 13];                  // can't modify constant datatype -> address change nhi hoga but you change elements of arr2
+console.log(arr2);                // [10, 10, 12, 25]
+arr2[2]=30;                      // [ 10, 10, 30, 25, 112 ]
+arr2.push(112);                 // [ 10, 10, 30, 25, 112 ]
+console.log(arr2);             //  [ 10, 10, 30, 25, 112 ]
+console.log(arr2.slice(2,4)); // index 4 is not included -> start after 2 and ends at index 4
+// slice() function doen't change the existing array. It remains same just another array gets created which is part of the first one.
+// If you want to make changes in original array -> splice function is used to trim array
+// we provide starting index and number of element to trim -> As given in below example
+console.log(arr2.splice(2,2)); // two elements 30 qnd 25 got trimmed from array
+console.log(arr2); // remaining three elements got printed
