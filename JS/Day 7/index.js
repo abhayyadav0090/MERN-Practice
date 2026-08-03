@@ -73,7 +73,7 @@ let a = "Rohit";
 let b = a;
 b = "Mohit"; // it will not change a
 console.log(`a=`+a+` & `+`b=`+b);
-
+{
 const arr2 =[10, 10, 12, 25];
 // arr2=[12, 13];                  // can't modify constant datatype -> address change nhi hoga but you change elements of arr2
 console.log(arr2);                // [10, 10, 12, 25]
@@ -84,5 +84,83 @@ console.log(arr2.slice(2,4)); // index 4 is not included -> start after 2 and en
 // slice() function doen't change the existing array. It remains same just another array gets created which is part of the first one.
 // If you want to make changes in original array -> splice function is used to trim array
 // we provide starting index and number of element to trim -> As given in below example
+console.log(arr2); // Array after slice function
 console.log(arr2.splice(2,2)); // two elements 30 qnd 25 got trimmed from array
-console.log(arr2); // remaining three elements got printed
+console.log(arr2); // remaining three elements got printed -> Array after splice function
+
+//arr2.push(30, 12, 14);
+console.log(array);                 // original array                    -> [ 10, 30, 50, 90, 11, 30 ]
+const arr3=array.splice(2,2,"Rohit",19);  // arr3 will contain trimmed array   -> [ 50, 90 ]
+console.log(array);                 // array after insertion of elements -> [ 10, 30, 'Rohit', 19, 11, 30 ]
+console.log(arr3);}
+
+{
+const arr =  [10,30,50,90,11];
+const arr2 = ["Rohit",11,true];
+const arr4 = [90,4,false];
+// console.log(arr4);
+// arr.push(arr2);                     // [ 10, 30, 50, 90, 11, [ 'Rohit', 11, true ] ]
+// const arr3=arr.concat(arr2);        // [ 10, 30, 50, 90, 11, 'Rohit', 11, true ]
+// const arr3=arr.concat(arr2,arr4);   // [ 10, 30, 50, 90, 11, 'Rohit', 11, true, 90, 4, false ]
+// const arr3 = [arr, arr2, arr4];     // [ [ 10, 30, 50, 90, 11 ], [ 'Rohit', 11, true ], [ 90, 4, false ] ]
+// Spread Operator
+const arr3=[...arr,...arr2,...arr4]    // [ 10, 30, 50, 90, 11, 'Rohit', 11, true, 90, 4, false ]
+console.log(arr3);}
+
+{
+const names = ["Alice", "Bob", "Charlie", "Bob"]
+// console.log(names.toString())           // Alice,Bob,Charlie
+// console.log(typeof names.toString());   // string
+// console.log(typeof names.toString);     // function
+// console.log(typeof names);              // object
+// console.log(typeof names.join(" "));    // string
+console.log(names.join(" "));              // Alice Bob Charlie
+console.log(names.join("-"));              // Alice-Bob-Charlie
+console.log(names.indexOf("Bob"));         //  1
+console.log(names.indexOf("Bobs"));        // -1
+console.log(names.lastIndexOf("Bob"));     //  3
+console.log(names.includes("Bob"));        // true
+console.log(names.includes("Bobs"));       // false
+}
+
+// Sorting 
+{
+const names = ["Alice", "alice", "Rohit", "Bob", "Mohit", "Charlie"];
+console.log(names);                        // [ 'Alice', 'alice', 'Rohit', 'Bob', 'Mohit', 'Charlie' ]
+names.sort();
+console.log(names);                        // [ 'Alice', 'Bob', 'Charlie', 'Mohit', 'Rohit', 'alice' ]
+// ASCII table -> A comes before a -> 'a'=97, 'R'=82;
+}
+
+// Reverse Printing
+{
+const names = ["Alice", "alice", "Rohit", "Bob", "Mohit", "Charlie"];
+console.log(names);                       // [ 'Alice', 'alice', 'Rohit', 'Bob', 'Mohit', 'Charlie' ]
+names.reverse();
+console.log(names);                       // [ 'Charlie', 'Mohit', 'Bob', 'Rohit', 'alice', 'Alice' ]
+}
+
+// Reverse Sorting
+{
+const names = ["Alice", "alice", "Rohit", "Bob", "Mohit", "Charlie"];
+console.log(names);                        // [ 'Alice', 'alice', 'Rohit', 'Bob', 'Mohit', 'Charlie' ]
+names.sort();
+names.reverse();
+console.log(names);                        // [ 'alice', 'Rohit', 'Mohit', 'Charlie', 'Bob', 'Alice' ]
+}
+
+{
+const a = [101, 90, 80, 32, 91];           // sees 101 as "101", 90 as "90", 80 as "80", 32 as "32", and so on;
+a.sort();
+console.log(a);                            // [ 101, 32, 80, 90, 91 ]
+const a2 = ["101", "90", "80", "32", "91"];           // sees 101 as "101", 90 as "90", 80 as "80", 32 as "32", and so on;
+a2.sort();
+console.log(a2);                            // [ '101', '32', '80', '90', '91' ]
+const arr=[10, "Rohit", "Mohan", true];
+arr.sort();
+console.log(arr);                           // [ 10, 'Mohan', 'Rohit', true ]
+
+const array=[10, 40, 31, 71, 5, 11];
+array.sort((a,b)=>a-b);
+console.log(array);                         // [ 5, 10, 11, 31, 40, 71 ]
+}
