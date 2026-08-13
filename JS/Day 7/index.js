@@ -200,3 +200,11 @@ const b = arr.flat(2);                      // flats the array at 2 level only (
 console.log(b);                             // [ 10, 30, 50, 40, 90, 60, 19, 99, 11, 80 ]
 // const b = arr.flat(Infinity);            // flats the array at infinite level (Array gets flat completely)
 }
+
+{
+const a = [10, 309, "Rohit", 9.3, true];
+// You can also access any element as character also
+console.log(a["0"]);                        // 10
+a.name = "Abhay yadav";
+console.log(a);                             // [ 10, 309, 'Rohit', 9.3, true, name: 'Abhay yadav' ]
+}
