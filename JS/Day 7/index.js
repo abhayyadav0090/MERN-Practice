@@ -1,7 +1,7 @@
 /*
 Author: Abhay Yadav
 Topic: Arrays in JavaScript
-Date: Wednesday, 8 July, 2026 to 
+Date: Wednesday, 8 July, 2026 to Thursday, 13 August, 2026
 */
 
 // Arrays
