@@ -1,3 +1,9 @@
+/*
+Author: Abhay Yadav
+Topic: Arrays in JavaScript
+Date: Wednesday, 8 July, 2026 to 
+*/
+
 // Arrays
 
 // let marks1 = 100;
@@ -160,7 +166,37 @@ const arr=[10, "Rohit", "Mohan", true];
 arr.sort();
 console.log(arr);                           // [ 10, 'Mohan', 'Rohit', true ]
 
+// Ascending Order
 const array=[10, 40, 31, 71, 5, 11];
 array.sort((a,b)=>a-b);
+/* Expalanation ->
+if 'a-b < 0' than 'a' will come before 'b';
+if 'a-b > 0' then 'b' will come before 'a';
+'10-40=-30'<0 therefore 10 come before '40' Ascending order;
+ */
 console.log(array);                         // [ 5, 10, 11, 31, 40, 71 ]
+
+// Descending Order
+// const array=[10, 40, 31, 71, 5, 11];
+array.sort((a,b)=>b-a);
+/* Expalanation ->
+if 'b-a < 0' than 'a' will come before 'b';
+if 'b-a > 0' then 'b' will come before 'a';
+'40-10=30'>0 therefore '40' come before '10' Descending order;
+ */
+console.log(array);                         // [ 71, 40, 31, 11, 10, 5 ]
+}
+
+{
+const arr = [10, 30, 50, [40, 90, [60, 19, 99], 11], 80];
+console.log(arr);                           // [ 10, 30, 50, [ 40, 90, [ 60, 19, 99 ], 11 ], 80 ]
+console.log(arr[3]);                        // [ 40, 90, [ 60, 19, 99 ], 11 ]
+console.log(arr[3][1]);                     // 90
+console.log(arr[3][2]);                     // [ 60, 19, 99 ]
+console.log(arr[3][2][1]);                  // 19
+const a = arr.flat();                       // flats the array at 1 level only
+console.log(a);                             // [ 10, 30, 50, 40, 90, [ 60, 19, 99 ], 11, 80 ]
+const b = arr.flat(2);                      // flats the array at 2 level only (AS it contains 2 brackets inside the main bracket so array gets flat completely)
+console.log(b);                             // [ 10, 30, 50, 40, 90, 60, 19, 99, 11, 80 ]
+// const b = arr.flat(Infinity);            // flats the array at infinite level (Array gets flat completely)
 }
