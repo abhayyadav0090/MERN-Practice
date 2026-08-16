@@ -52,10 +52,12 @@ Date: Thursday, 13 August, 2026
     // console.log(Object.values(user));            // [ 'Abhay Yadav', 90, 5000, 1234 ]
     // console.log(Object.entries(user));           // [ [ 'name', 'Abhay Yadav' ], [ 'age', 90 ], [ 'amount', 5000 ], [ 'adhaar', 1234 ] ]
 
-    for(let keys in user){
-        console.log(keys, ":", user[keys]);         // name : Abhay Yadav age : 90 amount : 5000 adhaar : 1234
-        // console.log(keys, ":", user.keys);       // Error -> undefined  -->> As No keys was named keys inside user ⭐
-    }
+    // ⭐ For in loop is not recommended, as it creates problems.
+    // ⭐ For of loop can be used in place of For in loop.
+    // for(let keys in user){
+    //     console.log(keys, ":", user[keys]);         // name : Abhay Yadav age : 90 amount : 5000 adhaar : 1234
+    //     // console.log(keys, ":", user.keys);       // Error -> undefined  -->> As No keys was named keys inside user ⭐
+    // }
 }
 
 {
@@ -81,4 +83,62 @@ Date: Thursday, 13 August, 2026
 
     // user.name="Vishnu";
     // console.log(user);                               // { name: 'Vishnu', age: 19, emailId: 'yadav@gmail.com', amount: 3400 }
+
+    // ⭐ For of loop -> for array
+    for(let keys of Object.keys(user)){
+        console.log(keys);
+    }
+    for(let values of Object.values(user)){
+        console.log(values);
+    }
+    for(let entries of Object.entries(user)){
+        console.log(entries);
+    }
+    for(let [keys, values] of Object.entries(user)){       // ⭐
+        console.log(keys, values);
+    }
+}
+
+{
+    const user = {
+        name: "Abhay Yadav",
+        age: 19,
+        emailId: "yadav@gmail.com",
+        amount: 3400,
+        greeting: function() {
+            console.log("Strike is coming on 18th october");
+            return 20;
+        }
+    }
+
+    const va = user.greeting();
+    console.log(va);
+}
+
+{
+    const user = {
+        name: "Abhay Yadav",
+        age: 19,
+        emailId: "yadav@gmail.com",
+        amount: 3400,
+        greeting: function() {
+            // console.log(`Strike is coming on 18th october.\nUserName = ${user.name}`); // Not Recommended
+            console.log(`Strike is coming on 18th october.\nUserName = ${this.name}`);    // Recommended
+            return 20;
+        }
+    }
+
+    // this refers to the object which called the function -> It is directly accessed
+    // user.name in place of this.user -> creates problem when more than one user calls the same function.
+            
+    const user2 = {
+        name: "Mohan",
+        account: 201,
+    }
+
+    user2.greeting=user.greeting;
+    const va = user2.greeting();
+    console.log(va);
+    // UserName = Abhay Yadav -> if user.name used. ⭐
+    // UserName = Mohan       -> if this.name used.
 }
