@@ -142,3 +142,69 @@ Date: Thursday, 13 August, 2026
     // UserName = Abhay Yadav -> if user.name used. ⭐
     // UserName = Mohan       -> if this.name used.
 }
+
+{
+    // Nested Object
+
+    const user = {
+        name: "Abhay Yadav",
+        age: 20,
+        emailId: "yadav@gmail.com",
+        address: {
+            city: "Mainpuri",
+            state: "Uttar Pradesh"
+        }
+    }
+
+    console.log(user.address.city);
+
+    // const user2 = user      -> they both refer to same object -> Changes in user2 are reflected in user also
+    // rather we have to use spread operator.
+
+    // Shallow Copy ⭐
+    const user2 = {...user};
+    user2.name = "Mohan";            // Change in name of user2 remained bounded in user2 only due to spread operator -> BUT
+    // Spread operator has limitation to 1 level only -> can't correct nested objects.
+    user2.address.city = "Dwarka";   // Change in city of user2 also changed in city of user.
+    user2.address.city = "Mainpuri";
+
+    // Deep Copy ⭐
+    const user3 = structuredClone(user);
+    user3.address.city = "Dwarka";   // Now the Nested objects were handled nicely.
+
+    console.log(user.address.city, user2.address.city, user3.address.city);
+}
+
+{
+    // You can numbers as KEY as in behind the scene the numbers will be stored in the form of Strings.
+    const user = {
+        name: "Abhay Yadav",
+        age: 20,
+        0: 100,
+        2: "Mohan"
+    }
+
+    // console.log(user.0);            // It will throw an error.
+    console.log(user[0]);              // 100 -> Correct
+    console.log(user[1]);              // undefined
+    console.log(user[2]);              // Mohan
+}
+
+{
+    // Behind the scene of storing array
+    const arr = [10, 20, 30, 40];
+    // Arrays is stored in the form of objects like shown below
+    const arr2 = {
+        0:10,
+        1:20,
+        2:30,
+        3:40
+    }
+
+    console.log(arr[0], arr2[0]);        // 10 10
+    console.log(arr[1]+arr2[3]);         // 20 + 40 = 60
+}
+
+{
+    // Keys as Symbol
+}
