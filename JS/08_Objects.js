@@ -1,7 +1,8 @@
 /*
 Author: Abhay Yadav
 Topic: Objects in JavaScript
-Date: Thursday, 13 August, 2026 
+Date: Thursday, 13 August, 2026
+Completion Date: 26 September, 2026
 */
 
 // In Objects things are stored in Key Value Pair
@@ -206,5 +207,64 @@ Date: Thursday, 13 August, 2026
 }
 
 {
-    // Keys as Symbol
+    // Keys jo hoti woh strings hi hoti hain lekin 2015 mein update jisme unhone kaha ham keys ko symbol ki tarah bhi treat kar sakte hain
+    // keys : Strings || Symbols
+
+    const sym = Symbol("id");
+    const user = {
+        name:"Abhay Yadav",
+        age: 20,
+        0: 100,           // Actually this 0 which is a key is stored in form of string "0"
+        2: "Mohan",
+        [sym]: "Hello Ji"      // if you don't apply brackets then the sym will be considered as string
+    }
+
+    console.log(user[sym]);     // Hello Ji
+}
+
+{   // ⭐⭐⭐
+    // there was a problem in storing the elements in array in last lecture
+    // we were storing all data of various datatype having diffrent sizes
+    // we were unable to find the address or index of next element
+    // if sizeofdata is fix then we can calculate address by -> BaseAddress+index*sizeofdata
+    // So we will store everything in number format like numbers stored directly and for strings we will use
+    // address of that string, so if the string changes in future, the size of blocks will not change means no variation in addressing
+    // we will create new memory for modified string and save its address in the array -> Constant size 
+
+    /*
+        const user = {
+            name:"Rohit",
+            age:"20",
+            amount:"1000",
+            city:"Dwarka"
+        }
+            name, age, amount or city -> all keys are considered as string
+            key: "name"       key: "age"     key: "amount"     key: "city"
+            value: "Rohit"    value: "20"    value: "1000"     value: "Dwarka"
+            // these key value pairs are stored in array
+            // But if changes the name Rohit to Rohit Negi
+            // then all elements to slide as the size of string increases
+            // So the solution to this problem is to store the value of keys and values {Specifically strings}
+            // in separate memory location and saving their addresses in the array
+            
+            // keys and values are stored by storing their addresses using Property pointer
+            // And if you store a array then it is stored using Element pointer
+
+            // const user = 5000 // user points to 5000
+            // 5000 contains three pointers Map, Property, and Element
+            // keys and values are stored at memory location 4000 and array is stored at 3000
+            // then property pointer points to 4000 and Element pointer points to 3000
+            // if the changes occur at keys, values or arrays -> it doesn't affect address of user
+            // just address in map, property, element changes
+            
+            // as the user object or array will have constant size so it can be saved in stack now
+            // Address of user is saved in Stack now, and the user wil be saved in Heap
+            // and the data addresses will be saved in heap now
+            // now even if the strings, values, keys change ->  the address will change but will be of same size (8 bytes)
+            // No change in size of user
+            
+            // address of array is not directly stored in const user, it is saved inside element pointer
+
+            // ⭐ That is why const in case of array does not give any error while changes occurs
+    */
 }
