@@ -2,7 +2,7 @@
 Author: Abhay Yadav
 Topic: Functions in JavaScript
 Date: Saturday, 26 September, 2026
-Completion Date: 26 September, 2026
+Completion Date: 17 October, 2026
 */
 
 // In this lecture we will know how to create function in JavaScript
@@ -131,8 +131,102 @@ Completion Date: 26 September, 2026
     }
 
     {
-        const squareNumber = (num) => num*num;
+        // const squareNumber = (num) => num*num;
+        // ⭐ If We have single parameter, no need of this bracket ()
+        const squareNumber = num => num*num;
         console.log(squareNumber(6000000000));
     }
 
+    {
+        const greeting = ()=> ({ name: "rohit", age: 20});
+        // OR ⭐
+        /*  
+            const greeting = ()=>{
+                const user = {
+                    name: "rohit",
+                    age: 20,
+                }
+                return user;
+                // OR ⭐
+                return {
+                    name: "rohit",
+                    age: 20,
+                }
+            }
+        */
+
+        // console.log(greeting);       // [Function: greeting]
+        console.log(greeting());        // { name: 'rohit', age: 20 }
+    }
+}
+
+{
+    // After Arrow Function We have
+    // IIFE -> Immediately Invoked Function -> [(Function Declaration)();]
+
+    (function greeting(){
+        console.log("HelloJi");
+    })();                              // This will automatically call the greeting function and prints the output -> HelloJi
+
+    (()=>{
+        console.log("Hi AbhayJi");
+    })();                              // Hi AbhayJi
+
+    // ⭐ these were the four ways to declare a function
+}
+
+{
+    // Callback Function
+
+    function greet(){
+        console.log("Hello Ji, Kaise ho");
+    }
+    function dance(){
+        console.log("I am dancing");
+    }
+    function meet(Callback){
+        console.log("I am going to meet someone");
+        // using dance() or greet() will hardcode the function -> it is no more reusable
+        // if we some code to execute after callback then.... we have to use callback
+        Callback();
+        console.log("I have finished meeting");
+    }
+    
+    // meet(greet());                 // Hello Ji, Kaise ho \n I am going to meet someone \n I have finished meeting    <- without callback and using brackets with greet
+    meet(greet);                      // I am going to meet someone \n Hello Ji, Kaise ho \n I have finished meeting
+    meet(dance);                      // I am going to meet someone \n I am dancing \n I have finished meeting
+}
+
+{
+    // use of Callback function
+
+    function blinkitOrderPlaced(){
+        console.log("We have started packing your order");
+    }
+
+    function zomatoOrderPlaced(){
+        console.log("We have started preparing your food");
+    }
+
+    function payment(amount, callback){
+        console.log(`${amount} payment has initialised`);
+        console.log("Payment is received");
+        callback();
+
+        // GST: Government
+        // Rider's payment
+        // company profit
+    }
+
+    payment(500, zomatoOrderPlaced);
+    payment(500, blinkitOrderPlaced);
+    /*
+        500 payment has initialised
+        Payment is received
+        We have started preparing your food
+        500 payment has initialised
+        Payment is received
+        We have started packing your order
+    */
+    
 }
