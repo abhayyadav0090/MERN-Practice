@@ -103,22 +103,36 @@ Completion Date: 26 September, 2026
     }
     greeting();                     // Hello AbhayJi
 
-    {const addNumber = (num1, num2)=>{
-        let sum = num1 + num2;
-        console.log(sum);
+    {
+        const addNumber = (num1, num2)=>{
+            let sum = num1 + num2;
+            console.log(sum);
+        }
+        addNumber(2, 9);                /* 11 */
+        console.log(addNumber(1, addNumber(2, addNumber(5, 9))));   /* 14 NaN NaN undefined */
     }
-    addNumber(2, 9);                /* 11 */
-    console.log(addNumber(1, addNumber(2, addNumber(5, 9))));   /* 14 NaN NaN undefined */}
 
-    {const addNumber = (num1, num2)=>{
-        return num1+num2;
+    {
+        const addNumber = (num1, num2)=>{
+            return num1+num2;
+        }
+        console.log(addNumber(2, 9));   /* 11 */
+        console.log(addNumber(1, addNumber(2, addNumber(5, 9))));   /* 17 */
     }
-    console.log(addNumber(2, 9));   /* 11 */
-    console.log(addNumber(1, addNumber(2, addNumber(5, 9))));   /* 17 */}
     
     // And ⭐ Even you need to put brackets as there is only one statement and above that return keyword is also not needed
     const addNumber = (num1, num2)=> num1+num2;
-    console.log(addNumber(2, 50));   // 523
+    console.log(addNumber(2, 50));   // 52
 
+    {
+        let arr = [10, 13, 12, 1, 5, 6];
+        arr.sort((a, b) => a-b);
+        console.log(arr);            // [ 1, 5, 6, 10, 12, 13 ]
+    }
+
+    {
+        const squareNumber = (num) => num*num;
+        console.log(squareNumber(6000000000));
+    }
 
 }
