@@ -116,6 +116,11 @@ greet();                          // 40 -> but we comment out the global variabl
 // console.log(balance);                  // NaN
 // this mistake took place because the developer has the direct access to code -> because the bank side has huge amount of code (thousands of lines)
 
+// ⭐ If you declare balance here -> you have remove this from everywhere inside user.
+// let balance = 500;
+// But still the user can directly access the balance or change the value of balance.
+// ⭐ So we have to make it private
+
 let user={
     balance: 500,
     deposit: function(amount){
@@ -143,3 +148,35 @@ console.log(user.deposit("200"));              // undefined
 // Still the developer has code access or access to change the balance, although you can't deposit or withdraw the invalid datatype but can change the data
 user.balance = "Abhay";
 console.log(user.getBalance());                // Abhay  -> again string as a balance
+
+// ⭐ But we want user can not directly access balance, he can only access the method to check balance
+
+function createBankAccount(){
+
+    balance = 500;
+
+    const user={
+        deposit: function(amount){
+            if(typeof amount=="number" && amount>0){
+                balance+=amount;
+                return balance;
+            }
+        },                                      // ⭐ -> that comma(,) <- mistake(error)
+        withdraw: function(amount){
+            if(typeof amount=="number" && amount>0 && balance>=amount){
+                balance-=amount;
+                return balance;
+            }
+        },
+        getBalance: function(amount){
+            return balance;
+        }
+    }
+
+    return user;
+}
+
+// ⭐ Now the developer can not make accidental changes. as the balance is private variable inside the function which can not be directly accessed.
+
+const customer = createBankAccount();
+console.log(customer); /* { deposit: [Function: deposit], withdraw: [Function: withdraw], getBalance: [Function: getBalance] }*/
