@@ -2,7 +2,7 @@
 Author: Abhay Yadav
 Topic: Scope, Closures and HOF in JavaScript
 Date: Tuesday, 20 October, 2026
-Completion Date: 20 October, 2026
+Completion Date: 18 November, 2026
 */
 
 // In this lecture we will understand the concept of Scope, closures and HOF in JavaScript
@@ -154,7 +154,7 @@ console.log(user.getBalance());                // Abhay  -> again string as a ba
 function createBankAccount(){
 
     balance = 500;
-
+    // ⭐ in place of declaring user then returning it you can directly return the user without declaring -> return {...deposit..., withdraw..., getBalance..}
     const user={
         deposit: function(amount){
             if(typeof amount=="number" && amount>0){
@@ -180,3 +180,32 @@ function createBankAccount(){
 
 const customer = createBankAccount();
 console.log(customer); /* { deposit: [Function: deposit], withdraw: [Function: withdraw], getBalance: [Function: getBalance] }*/
+console.log(customer.deposit(200));      // 700 <- 500+200
+console.log(customer.withdraw(700));     // 0 <- 700-700
+console.log(customer.getBalance());      // 0
+console.log(customer.withdraw(100));     // undefined <- you can't withdraw as you have 0 balance remaining in your account.
+
+
+// Higher Order Function (HOF)  ->  similar to callback function.
+
+function double(){
+    return function execute(){
+        console.log("Hello");
+    }
+    // return execute;
+}
+const n = double();
+n();                                     // Hello
+
+function outer(value){
+    return function inner(num){
+        return num * value;
+    }
+}
+
+const m = outer(20);
+console.log(m());                         // NaN
+console.log(m(5));                        // 100
+
+const l = outer(11)(9);
+console.log(l);                           // 99
